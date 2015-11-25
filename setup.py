@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-import sqlize
+import sqlize_pg
 
 
 def read(fname):

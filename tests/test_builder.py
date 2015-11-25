@@ -1,4 +1,4 @@
-import sqlize as mod
+import sqlize_pg as mod
 
 MOD = mod.__name__
 
