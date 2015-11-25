@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-import sqlize_pg
+import sqlize_pg as pkg
 
 
 def read(fname):
@@ -10,14 +10,14 @@ def read(fname):
 
 
 setup(
-    name='sqlize',
-    version=sqlize.__version__,
+    name='sqlize-pg',
+    version=pkg.__version__,
     author='Outernet Inc',
     author_email='branko@outernet.is',
     description='Lightweight SQL query builder',
     license='BSD',
     keywords='sql query builder',
-    url='https://github.com/Outernet-project/sqlize',
+    url='https://github.com/Outernet-project/sqlize-pg',
     packages=find_packages(),
     long_description=read('README.rst'),
     classifiers=[
