@@ -373,7 +373,7 @@ class Update(Statement):
 
     def serialize(self):
         sql = 'UPDATE {} SET '.format(self.table)
-        sql += ', '.join((u'{} = \'{}\''.format(col, p)
+        sql += ', '.join((u'{} = {}'.format(col, p)
                           for col, p in self.set_args.items()))
         if self.where:
             sql += ' {}'.format(self._where)
